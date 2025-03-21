@@ -3,12 +3,12 @@ dotEnv.config();
 
 export const ACCOUNTS = [
     {
-        address: Buffer.from(`${process.env.ACCOUNT1}`, "hex"),
-        privateKey: `${process.env.PRIVATE_KEY1}`,
+        address: `${process.env.ACCOUNT1}`,
+        privateKey: Buffer.from(`${process.env.PRIVATE_KEY1}`, "hex"),
     },
     {
-        address: Buffer.from(`${process.env.ACCOUNT2}`, "hex"),
-        privateKey: `${process.env.PRIVATE_KEY2}`,
+        address: `${process.env.ACCOUNT2}`,
+        privateKey: Buffer.from(`${process.env.PRIVATE_KEY2}`, "hex"),
     },
 ];
 
